@@ -99,4 +99,4 @@ do {
 
 } while (square < maxSquare);
 
-document.getElementById("square").innerHTML = "Le potenze di 2 minori di 1000 sono:" + `<ul><li>${squareNumbers += squareNumbers[i]}</li></ul>`;
+document.getElementById("square").innerHTML = "Le potenze di 2 minori di 1000 sono:" + `<ul><li>${squareNumbers}</li></ul>`;
