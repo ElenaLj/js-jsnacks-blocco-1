@@ -66,3 +66,37 @@ if (insertWord.length === insertAnother.length) {
     //output HTML
     document.querySelector(".word-two").innerHTML = insertAnother + " ha un numero di caratteri maggiore rispetto a " + insertWord;
 };
+
+//JSnack 3
+//Stampa le potenze di 2 fino a 1000
+
+// ****************** ragionamento basic
+
+// let quadrato = 2;
+// console.log(quadrato);
+
+// quadrato = quadrato * 2;
+// console.log(quadrato);
+
+// quadrato = quadrato * 2;
+// console.log(quadrato);
+
+// ... continua 
+
+// ****************** soluzione con ciclo DO WHILE
+let square = 2;
+// console.log(square);
+let maxSquare = 512;
+
+let squareNumbers = [2];
+
+do {
+    square = square * 2;
+    // console.log(square);
+
+    squareNumbers.push(square);
+    console.log(squareNumbers);
+
+} while (square < maxSquare);
+
+document.getElementById("square").innerHTML = "Le potenze di 2 minori di 1000 sono:" + `<ul><li>${squareNumbers += squareNumbers[i]}</li></ul>`;
