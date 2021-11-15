@@ -37,3 +37,32 @@ console.log("La somma dei numeri inseriti con il ciclo while è: " + sommaWhile)
 
 document.getElementById("sommawhile").innerHTML = "La somma dei numeri inseriti con il ciclo while è: " + sommaWhile;
 
+// JSnack 2
+// Dare la possibilità di inserire due parole.
+// Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
+// Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
+
+const insertWord = prompt("Inserisci una parola");
+const insertAnother = prompt("Inserisci un'altra parola");
+
+// console.log(insertWord);
+// console.log(insertAnother);
+
+if (insertWord.length === insertAnother.length) {
+    console.log(insertWord + " e " + insertAnother + " " + "hanno lo stesso numero di caratteri");
+
+    // output HTML
+    document.querySelector(".same").innerHTML = insertWord + " e " + insertAnother + " " + "hanno lo stesso numero di caratteri";
+
+} else if (insertWord.length > insertAnother.length) {
+    console.log(insertWord + " ha un numero di caratteri maggiore rispetto a " + insertAnother);
+
+    // output HTML
+    document.querySelector(".word-one").innerHTML = insertWord + " ha un numero di caratteri maggiore rispetto a " + insertAnother;
+
+} else {
+    console.log(insertAnother + " ha un numero di caratteri maggiore rispetto a " + insertWord);
+
+    //output HTML
+    document.querySelector(".word-two").innerHTML = insertAnother + " ha un numero di caratteri maggiore rispetto a " + insertWord;
+};
